@@ -1,0 +1,164 @@
+/*om man använder sig av * som här under påverkar man hela sidan*/
+
+
+* {
+    font-family: "Jost", sans-serif;
+    
+    
+}
+
+/*här på root kam man lägga in element man vill ha på sidan,z färger typsnitt osv*/
+
+:root {
+    --background: rgba(255, 204, 46, 100%);
+    
+    
+}
+
+body {
+    margin: 0%;
+
+}
+
+
+header{
+    font-family: "Oswald", sans-serif;
+    font-size: xx-large;
+    font-weight: 700;
+
+
+
+
+
+}
+
+/* här ligger logo rubriken på h1*/
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+
+}
+
+/*det här är en återställningskonf för att bilder ska anpassa sig på ett bra sätt*/
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+/* Styling av navigation börjar här */
+
+header{
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+   
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+ 
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0.3em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-toggle-label span, 
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: black;
+    height: 2px;
+    width: 1em;
+    border-radius: 2px;
+    position: relative;
+
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+.nav-toggle-label span::after {
+    top: 7px;
+}
+    
+
+nav {
+
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: var(--background);
+    width: 100%;
+    padding-right: 1em;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+    
+   
+}
+
+nav ul {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+    
+  
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: grey;
+}
+
+.nav-toggle:checked ~ nav {
+    transform: scale(1,1);
+    
+
+}
+
+.nav-toggle:checked ~ nav a {
+    opacity: 1;'
+    transition: opacity 250ms ease-in-out 350ms;
+}
+
+/*navigations styling slutar här*/
+
+
+
+
+
+
