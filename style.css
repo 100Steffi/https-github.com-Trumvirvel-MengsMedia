@@ -7,10 +7,16 @@
     
 }
 
-/*här på root kam man lägga in element man vill ha på sidan,z färger typsnitt osv*/
+/*här på root kam man lägga in element man vill ha på sidan,z färger typsnitt osv, bara att skriva var eller -- så borde alternativen komma upp*/
 
 :root {
-    --background: rgba(255, 204, 46, 100%);
+    --clr-yellow: rgba(255, 204, 46, 100%);
+    --clr-beige: rgba(255, 230, 181, 100%);
+    --clr-rust: rgba(220, 109, 47, 100%);
+
+    --ff-brödtext: var("Jost", sans-serif);
+    --ff-heading: var("Oswald", sans-serif);
+
     
     
 }
@@ -52,7 +58,7 @@ img {
 /* Styling av navigation börjar här */
 
 header{
-    background: var(--background);
+    background: var(--clr-yellow);
     text-align: center;
     position: fixed;
     z-index: 999;
