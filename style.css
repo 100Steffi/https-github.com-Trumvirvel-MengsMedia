@@ -114,7 +114,7 @@ nav {
     text-align: right;
     top: 100%;
     right: 0;
-    background: var(--background);
+    background: var(--clr-yellow);
     width: 100%;
     padding-right: 1em;
     transform: scale(1, 0);
@@ -138,8 +138,9 @@ nav li {
 }
 
 nav a {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-family: var(--ff-brödtext);
     font-size: 1.2rem;
     text-transform: uppercase;
     opacity: 0;
@@ -160,6 +161,61 @@ nav a:hover {
     opacity: 1;'
     transition: opacity 250ms ease-in-out 350ms;
 }
+
+
+
+@media screen and (min-width:800px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    header { 
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 1fr) 1fr;
+    }
+    .logo {
+        grid-column: 2/3;
+    }
+    nav {
+        all: unset;
+        grid-column: 3 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+    }
+    nav a {
+        opacity: 1;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+     
+    }
+    nav li {
+        margin-left: 1.2em;
+    }
+    nav a ::before {
+        content:x;
+        display: block;
+
+
+    }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*navigations styling slutar här*/
 
