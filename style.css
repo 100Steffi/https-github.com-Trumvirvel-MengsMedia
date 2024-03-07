@@ -15,16 +15,30 @@
     --clr-rust: rgba(220, 109, 47, 100%);
 
     --ff-brödtext: var("Jost", sans-serif);
-    --ff-heading: var("Oswald", sans-serif);
-
-    
-    
+    --ff-heading: var("Oswald", sans-serif);    
 }
+
 
 body {
-    margin: 0%;
+    display: grid;
+    margin: 0;
+    min-height: 100vh;
+    grid-template-columns: 1em, 1em, 1em, 1em;
+    grid-template-areas:
+      " header header header header " 
+      "....... main   main ........."
+      " footer footer footer footer "
+      
+      
+      
+      
+      
+      ;
 
 }
+
+
+
 
 
 header{
@@ -181,11 +195,6 @@ nav a:hover {
         grid-column: 3 / 4;
         display: grid;
         align-items: center;
-
-     
-        
-       
-
     }
     nav a {
         opacity: 1;
@@ -209,40 +218,40 @@ nav a:hover {
         transform: scale(1,1);
 
     }
-
-  
-    
-
     nav ul {
         display: flex;
         justify-content: flex-end
 
-       
-  
     }
+
     nav li {
         margin-left: 2,7em;
         margin-bottom: 0%;
         padding-right: 60px;
-        
-    
-        
+           
     }
-
-    
-
-
-
-
-   
-
-
-    
 }
 
 
 /*navigations styling slutar här*/
 
+
+
+/*footer styling börjar här*/
+
+footer { grid-area: footer; 
+   display: grid;
+   background-color: rgba(255, 230, 181, 100%);
+   color: black;
+   text-align: center;
+   
+}
+
+/*footer styling slutar här*/
+
+
+
+  
 
 
 
