@@ -215,13 +215,13 @@ border-radius: 60px;
 
 
     border-style: solid;
-    border-color: rgb(43, 248, 234);
+    border-color:black;
     border-radius: 30%;}
 
 
 
 
-
+.link a {text-decoration:none;}
 
     
 .item {width: 300px;
