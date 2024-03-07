@@ -170,7 +170,9 @@ nav a:hover {
 }
 
 
-.section1{width: 30%;}
+.section1{width: 30%;
+    font-family: "Jost", sans-serif;
+}
 
 .section2{width: 70%;
 }
@@ -183,7 +185,14 @@ nav a:hover {
 
 
 }
+@media screen and (max-width: 719px) { 
+    .item {   flex-grow: 1;
+}
+    
 
+
+
+}
 
 
 .items 
@@ -192,15 +201,22 @@ nav a:hover {
    display: flex;
    text-align: center;
    justify-content: space-between; 
-   background-color: #FFE6B5;
+   background-color: #ffcb2e48;
    padding: 50px;
+   
+   
+border-radius: 60px;
    
    flex-wrap: wrap;
 }
 
 .individuellabilder {
     
-    border-radius: 50%;}
+
+
+    border-style: solid;
+    border-color: rgb(43, 248, 234);
+    border-radius: 30%;}
 
 
 
@@ -209,4 +225,8 @@ nav a:hover {
 
     
 .item {width: 300px;
+
+    
+    font-family: "Jost", sans-serif;
+    font-size: 2.2rem;
 }
