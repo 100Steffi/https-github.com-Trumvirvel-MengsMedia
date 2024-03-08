@@ -203,12 +203,15 @@ nav a:hover {
    justify-content: space-between; 
    background-color: #ffcb2e48;
    padding: 50px;
-   
-   
-border-radius: 60px;
-   
+   border-radius: 60px;
    flex-wrap: wrap;
 }
+
+
+.section h1{ color: orangered;
+text:3rem;}
+
+
 
 .individuellabilder {
     
