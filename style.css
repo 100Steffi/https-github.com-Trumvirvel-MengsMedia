@@ -243,96 +243,59 @@ nav a:hover {
 
 
 
-
-
 /* ej skarpt förslag, men testar med denna referenspunkt för att få bättre koll på responsiviteten*/
 
+
+div{
+  margin:auto;
+width: 740px
+}  
 
 
 /* stilinst med type="text", val av element och textområden */
 input[type=text], select, textarea {
-    width: 100%; /* full width */
-    padding: 12px; /* lite padding */ 
-    border: 1px solid #ccc; /* grå kant */
-    border-radius: 4px; /* runda kanter */
-    box-sizing: border-box; /* gör så att padding och width är kvar på samma ställe */
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical /* Tillåter storleksjust på textområdet, vertikalt (inte horisontellt)*/
-  }
-
+  width: 100%; 
+  padding: 10px; /* lite padding */ 
+  border: 1px solid #ccc; /* grå kant */
+  border-radius: 10px; /* runda kanter, själva fälten */
+  box-sizing: border-box; /* gör så att padding och width är kvar på samma ställe */
+  margin-top: 6px; 
+  margin-bottom: 6px; 
+  resize: vertical /* Tillåter storleksjust på textområdet, vertikalt (inte horisontellt)*/
+}
+}
 }
 
+input[type=submit] {
+  background-color: rgba(255, 204, 46, 100%);;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: rgba(255, 204, 46, 100%);
 }
 
-  /* Stajla skicka-knappen med bakgrundsfärg etc */
-  input[type=submit] {
-    background-color: rgba(255, 204, 46, 100%);;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* mörkare färg när musepekaren är över skicka-knappen */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* bakgrundsfärg, även padding, runt formuläret */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
+/* bakgrundsfärg, även padding, runt formuläret */
+.container {
+  border-radius: 15px;
+  background-color: rgba(255, 204, 46, 100%);
+  padding: 20px;
+}
 
 /* ej skarpt förslag, men testar med denna referenspunkt för att få bättre koll på responsiviteten*/
 
-    <!DOCTYPE html>
-    <html class="no-js" lang="sv">
-      <head>
-        <meta charset="utf-8" />
-    
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <style>
+      
+
+        @media screen and (max-width: 800px) {
           body {
-            background-color: red;
+            
+            div{
+              width: 92%;
+              margin: auto;
+              }  
           }
-          @media screen and (min-width: 320px) {
-            body {
-              background-color: rgb(255, 255, 255);
-            }
-          }
-          @media screen and (min-width: 550px) {
-            body {
-              background-color: yellow;
-            }
-          }
-          @media screen and (min-width: 768px) {
-            body {
-              background-color: rgb(73, 70, 63);
-            }
-          }
-          @media screen and (min-width: 960px) {
-            body {
-              background-color: rgb(22, 22, 22);
-            }
-          }
-        </style>
-      </head>
-      <body></body>
-    </html>
-    
-
-  
-  /* oavslutat test */
-
-  @media screen and (min-width:850px) {
-    <element class="container:"> {
-        display: grid;
-        grid-template-columns:
-    }
-  
-
-
+        }
+     
