@@ -201,10 +201,11 @@ nav a:hover {
    display: flex;
    text-align: center;
    justify-content: space-between; 
-   background-color: #ffcb2e48;
+   background-color: #ffcb2edb;
    padding: 50px;
    border-radius: 60px;
-   flex-wrap: wrap;
+
+   flex-wrap: wrap; 
 }
 
 
@@ -217,9 +218,11 @@ text:3rem;}
     
 
 
+    background: #a84909;
+    border-radius: 50%;
     border-style: solid;
     border-color:black;
-    border-radius: 30%;}
+    }
 
 
 
