@@ -165,8 +165,8 @@ nav a:hover {
 { 
     display: flex;
     align-items: center;
-   padding: 50px;
-
+    padding: 50px;
+    
 }
 
 
@@ -187,6 +187,7 @@ nav a:hover {
 }
 @media screen and (max-width: 719px) { 
     .item {   flex-grow: 1;
+        min-width: 230px;
 }
     
 
@@ -200,39 +201,44 @@ nav a:hover {
 {
    display: flex;
    text-align: center;
-   justify-content: space-between; 
+   justify-content: space-between;
    background-color: #ffcb2edb;
    padding: 50px;
-   border-radius: 60px;
-
    flex-wrap: wrap; 
+   
 }
 
 
-.section h1{ color: orangered;
-text:3rem;}
+
+    
+    
+    .section h1{ color: orangered;
+font-size: 3rem;}
 
 
-
-.individuellabilder {
+ 
+.individuellabilder { 
     
 
-
-    background: #a84909;
-    border-radius: 50%;
-    border-style: solid;
-    border-color:black;
+    
+    border-bottom: solid; 
+    border-color:  #ffcb2edb;
+   
+   
     }
 
-
+.title{height: 270px;}
 
 
 .link a {text-decoration:none;}
 
     
-.item {width: 300px;
+.item {width: 230px; 
 
+    padding: 10px;
+    background-color: #FFE6B5;
+    margin: 5px;
     
     font-family: "Jost", sans-serif;
-    font-size: 2.2rem;
+    
 }
